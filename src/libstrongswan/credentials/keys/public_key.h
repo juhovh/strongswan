@@ -47,8 +47,14 @@ enum key_type_t {
 	KEY_ED25519 = 4,
 	/** Ed448   PureEdDSA instance as in RFC 8032 */
 	KEY_ED448   = 5,
+	/** Dilithium2 NIST Round 3 Submission candidate */
+	KEY_DILITHIUM_2 = 6,
+	/** Dilithium3 NIST Round 3 Submission candidate */
+	KEY_DILITHIUM_3 = 7,
+	/** Dilithium4 NIST Round 3 Submission candidate */
+	KEY_DILITHIUM_4 = 8,
 	/** BLISS */
-	KEY_BLISS = 6,
+	KEY_BLISS = 9,
 };
 
 /**
@@ -110,6 +116,12 @@ enum signature_scheme_t {
 	SIGN_ED25519,
 	/** PureEdDSA on Curve448 as in RFC 8410                           */
 	SIGN_ED448,
+	/** Dilithium2 NIST Round 3 Submission signature                   */
+	SIGN_DILITHIUM_2,
+	/** Dilithium3 NIST Round 3 Submission signature                   */
+	SIGN_DILITHIUM_3,
+	/** Dilithium4 NIST Round 3 Submission signature                   */
+	SIGN_DILITHIUM_4,
 	/** BLISS with SHA-2_256                                           */
 	SIGN_BLISS_WITH_SHA2_256,
 	/** BLISS with SHA-2_384                                           */

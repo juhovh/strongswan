@@ -88,6 +88,15 @@ static private_key_t *parse_private_key(chunk_t blob)
 						type = KEY_ED448;
 						part = BUILD_EDDSA_PRIV_ASN1_DER;
 						break;
+					case OID_DILITHIUM_2:
+						type = KEY_DILITHIUM_2;
+						break;
+					case OID_DILITHIUM_3:
+						type = KEY_DILITHIUM_3;
+						break;
+					case OID_DILITHIUM_4:
+						type = KEY_DILITHIUM_4;
+						break;
 					default:
 						/* key type not supported */
 						goto end;
